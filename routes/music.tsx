@@ -112,7 +112,7 @@ export default function Music() {
 
             <div class="grid grid-cols-3 ">
               <a
-                href="https://soundcloud.com/cn96"
+                href="https://soundcloud.com/ataracticmusic"
                 class="hover:bg-white hover:text-black"
               >
                 Soundcloud
@@ -123,10 +123,40 @@ export default function Music() {
             <h2 class="font-bold">tracklist</h2>
 
             <a
-              href="https://soundcloud.com/cn96/1146pm"
+              href="https://soundcloud.com/ataracticmusic/1146pm"
               class="hover:bg-white hover:text-black"
             >
               1146pm
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-3 border border-sky-900 bg-sky-950 p-1">
+          <div>
+            <h1 class="font-bold">myst</h1>
+            <h2>
+              luxurious, evasive dreamy and shimmering sounds inspired from 80s vhs commercials, 80s way of life and aesthetics.
+            </h2>
+          </div>
+          <div class="flex flex-col">
+            <h2 class="font-bold">links</h2>
+
+            <div class="grid grid-cols-3 ">
+              <a
+                href="https://soundcloud.com/mystescape"
+                class="hover:bg-white hover:text-black"
+              >
+                Soundcloud
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <h2 class="font-bold">tracklist</h2>
+
+            <a
+              href="https://soundcloud.com/mystescape/presence"
+              class="hover:bg-white hover:text-black"
+            >
+              presence
             </a>
           </div>
         </div>
