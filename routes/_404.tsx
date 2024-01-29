@@ -9,7 +9,7 @@ export default function Error404() {
       </Head>
       <Header />
       <div class="max-w-screen-md mx-auto flex flex-col gap-3">
-        <div>
+        <div class="bg-sky-950 border border-sky-900 p-1">
         <h1 class="font-bold">404</h1>
         <a
           class="text-white hover:bg-white hover:text-black"
