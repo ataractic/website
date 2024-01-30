@@ -17,37 +17,37 @@ export default function Music() {
             <h2 class="font-bold">links</h2>
               <a
                 href="https://soundcloud.com/hyperwavmusic"
-                class="hover:bg-white hover:text-black"
+                class="text-blue-400 underline"
               >
                 Soundcloud
               </a>
               <a
                 href="https://hyperwavmusic.bandcamp.com/"
-                class="hover:bg-white hover:text-black"
+                class="text-blue-400 underline"
               >
                 Bandcamp
               </a>
               <a
                 href="https://open.spotify.com/intl-fr/artist/0geHGCdO2rBJVvnhQDON9V?si=RSt13Pm_QICvPuPu3va-LQ"
-                class="hover:bg-white hover:text-black"
+                class="text-blue-400 underline"
               >
                 Spotify
               </a>
               <a
                 href="https://music.youtube.com/channel/UCr1TACblgK6JvEDE_zJtHZw"
-                class="hover:bg-white hover:text-black"
+                class="text-blue-400 underline"
               >
                 YT Music
               </a>
               <a
                 href="https://music.apple.com/us/artist/hyperwav/1510269111"
-                class="hover:bg-white hover:text-black"
+                class="text-blue-400 underline"
               >
                 Apple Music
               </a>
               <a
                 href="https://deezer.page.link/2s3LwVD9UDmeDcS98"
-                class="hover:bg-white hover:text-black"
+                class="text-blue-400 underline"
               >
                 Deezer
               </a>
@@ -57,43 +57,43 @@ export default function Music() {
 
             <a
               href="https://soundcloud.com/hyperwavmusic/kilimanjaro"
-              class="hover:bg-white hover:text-black"
+              class="text-blue-400 underline"
             >
               kilimanjaro
             </a>
             <a
               href="https://soundcloud.com/hyperwavmusic/departure"
-              class="hover:bg-white hover:text-black"
+              class="text-blue-400 underline"
             >
               departure
             </a>
             <a
               href="https://soundcloud.com/hyperwavmusic/swim"
-              class="hover:bg-white hover:text-black"
+              class="text-blue-400 underline"
             >
               swim
             </a>
             <a
               href="https://soundcloud.com/hyperwavmusic/pictures"
-              class="hover:bg-white hover:text-black"
+              class="text-blue-400 underline"
             >
               pictures
             </a>
             <a
               href="https://soundcloud.com/hyperwavmusic/soulless"
-              class="hover:bg-white hover:text-black"
+              class="text-blue-400 underline"
             >
               soulless
             </a>
             <a
               href="https://soundcloud.com/hyperwavmusic/digital-dancer"
-              class="hover:bg-white hover:text-black"
+              class="text-blue-400 underline"
             >
               digital-dancer
             </a>
             <a
               href="https://soundcloud.com/hyperwavmusic/quantum-drive"
-              class="hover:bg-white hover:text-black"
+              class="text-blue-400 underline"
             >
               quantum-drive
             </a>
@@ -113,7 +113,7 @@ export default function Music() {
             <div class="grid grid-cols-3 ">
               <a
                 href="https://soundcloud.com/ataracticmusic"
-                class="hover:bg-white hover:text-black"
+                class="text-blue-400 underline"
               >
                 Soundcloud
               </a>
@@ -124,7 +124,7 @@ export default function Music() {
 
             <a
               href="https://soundcloud.com/ataracticmusic/1146pm"
-              class="hover:bg-white hover:text-black"
+              class="text-blue-400 underline"
             >
               1146pm
             </a>
@@ -143,7 +143,7 @@ export default function Music() {
             <div class="grid grid-cols-3 ">
               <a
                 href="https://soundcloud.com/mystescape"
-                class="hover:bg-white hover:text-black"
+                class="text-blue-400 underline"
               >
                 Soundcloud
               </a>
@@ -154,7 +154,7 @@ export default function Music() {
 
             <a
               href="https://soundcloud.com/mystescape/presence"
-              class="hover:bg-white hover:text-black"
+              class="text-blue-400 underline"
             >
               presence
             </a>

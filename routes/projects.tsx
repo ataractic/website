@@ -17,7 +17,7 @@ interface EntryProps {
 
 function Entry(props: EntryProps) {
   return (
-    <div class="flex flex-col gap-3">
+    <div class="flex flex-col gap-3 bg-sky-950 border border-sky-900 p-1">
       <div>
         <h1 class="font-bold">
           {props.title}{" "}
@@ -25,7 +25,7 @@ function Entry(props: EntryProps) {
             {props.private ? "(private)" : (
               <a
                 href={props.url}
-                class="hover:bg-white hover:text-black"
+                class="text-blue-400 underline"
               >
                 browse repository
               </a>
@@ -38,22 +38,6 @@ function Entry(props: EntryProps) {
         <h1 class="font-bold">language</h1>
         <h2>{props.language ?? "none"}</h2>
       </div>
-      <div>
-        <h1 class="font-bold">topics</h1>
-        <div class="grid grid-cols-3">
-          {props.topics.length > 0
-            ? props.topics.map((elem) => (
-              <a
-                href={`https://github.com/topics/${elem}`}
-                class="hover:bg-white hover:text-black"
-              >
-                {elem}
-              </a>
-            ))
-            : "none"}
-        </div>
-      </div>
-      <hr />
     </div>
   );
 }
@@ -62,7 +46,7 @@ export const handler: Handlers<ProjectsPageData, ProjectsPageData> = {
   async GET(_req, ctx) {
     const GITHUB_TOKEN = Deno.env.get("GITHUB_TOKEN");
 
-    const res1 = await fetch("https://api.github.com/users/eretsym/repos", {
+    const res1 = await fetch("https://api.github.com/users/ataractic/repos", {
       headers: {
         "Authorization": `Bearer ${GITHUB_TOKEN}`,
         "X-GitHub-Api-Version": "2022-11-28",
@@ -88,8 +72,7 @@ export default function projects(props: PageProps<ProjectsPageData>) {
   return (
     <div class="mx-auto">
       <Header />
-      <div class="max-w-screen-md mx-auto grid grid-cols-2 gap-3">
-        <div class="flex flex-col gap-3">
+      <div class="max-w-screen-md mx-auto flex flex-col gap-3">
           {props.data.projects.map((elem) => (
             <Entry
               title={
@@ -118,7 +101,6 @@ export default function projects(props: PageProps<ProjectsPageData>) {
               }
             />
           ))}
-        </div>
       </div>
     </div>
   );

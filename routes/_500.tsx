@@ -12,7 +12,7 @@ export default function Error404() {
         <div class="bg-sky-950 border border-sky-900 p-1">
         <h1 class="font-bold">500</h1>
         <a
-          class="text-white hover:bg-white hover:text-black"
+          class="text-blue-400 underline"
           href="https://google.com"
         >
           better come back later

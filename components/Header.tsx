@@ -1,5 +1,3 @@
-import { JSX } from "preact";
-import { IS_BROWSER } from "$fresh/runtime.ts";
 import { Logo } from "../islands/Logo.tsx";
 
 export function Header() {
@@ -7,13 +5,16 @@ export function Header() {
     <div class="flex flex-col justify-center max-w-screen-md mx-auto mb-3">
       <div class="flex gap-3 p-1 text-white justify-center border border-sky-900 bg-sky-950">
         <Logo />
-        <a class="hover:text-black hover:bg-white" href="/music">
+        <a class="text-blue-400 underline" href="/">
+          home
+        </a>
+        <a class="text-blue-400 underline" href="/music">
           music
         </a>
-        <a class="hover:text-black hover:bg-white" href="/contact">
+        <a class="text-blue-400 underline" href="/contact">
           contact
         </a>
-        <a class="hover:text-black hover:bg-white" href="/projects">
+        <a class="text-blue-400 underline" href="/projects">
           projects
         </a>
       </div>

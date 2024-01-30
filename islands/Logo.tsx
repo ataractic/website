@@ -1,29 +1,28 @@
 import { useState, useEffect } from "https://esm.sh/preact@10.19.2/hooks";
 
 const arr: string[] = [
-  `ataractic`,
-  `---------`,
-  `ataractic`,
-  `---------`,
-  `a--------`,
-  `at-------`,
-  `ata------`,
-  `atar-----`,
-  `atara----`,
-  `atarac---`,
-  `ataract--`,
-  `ataracti-`,
-  `ataractic`,
-  `---------`,
+  `ataractic.net`,
+  `-------------`,
+  `ataractic.net`,
+  `-------------`,
+  `a------------`,
+  `at-----------`,
+  `ata----------`,
+  `atar---------`,
+  `atara--------`,
+  `atarac-------`,
+  `ataract------`,
+  `ataracti-----`,
+  `ataractic----`,
+  `ataractic.---`,
+  `ataractic.n--`,
+  `ataractic.ne-`,
+  `ataractic.net`,
+  `-------------`,
 ];
 
-// const arr: string[] = [
-//   `mystère`,
-//   `myst.re`,
-// ];
-
 export function Logo() {
-  const [text, setText] = useState("---------");
+  const [text, setText] = useState("-------------");
   let i = 0;
 
   function rotateText() {
@@ -41,12 +40,11 @@ export function Logo() {
   }, [])
 
   return (
-    <a
+    <div
       id="logo"
-      class="text-white font-bold hover:text-black hover:bg-white"
-      href="/"
+      class="font-bold text-white"
     >
       {text}
-    </a>
+    </div>
   );
 }
