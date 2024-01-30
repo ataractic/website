@@ -17,15 +17,15 @@ interface EntryProps {
 
 function Entry(props: EntryProps) {
   return (
-    <div class="flex flex-col gap-3 bg-sky-950 border border-sky-900 p-1">
+    <div class="flex flex-col gap-3 bg-[#222625] border border-[#393E59] p-1">
       <div>
-        <h1 class="font-bold">
+        <h1 class="font-bold flex justify-between">
           {props.title}{" "}
           <span class="font-normal">
             {props.private ? "(private)" : (
               <a
                 href={props.url}
-                class="text-blue-400 underline"
+                class="text-[#ECF2BD] underline"
               >
                 browse repository
               </a>
@@ -70,38 +70,35 @@ export const handler: Handlers<ProjectsPageData, ProjectsPageData> = {
 
 export default function projects(props: PageProps<ProjectsPageData>) {
   return (
-    <div class="mx-auto">
-      <Header />
-      <div class="max-w-screen-md mx-auto flex flex-col gap-3">
-          {props.data.projects.map((elem) => (
-            <Entry
-              title={
-                // @ts-ignore: large response
-                elem.full_name
-              }
-              object={
-                // @ts-ignore: large response
-                elem.description
-              }
-              language={
-                // @ts-ignore: large response
-                elem.language
-              }
-              topics={
-                // @ts-ignore: large response
-                elem.topics
-              }
-              private={
-                // @ts-ignore: large response
-                elem.private
-              }
-              url={
-                // @ts-ignore: large response
-                elem.html_url
-              }
-            />
-          ))}
-      </div>
+    <div class="max-w-screen-md mx-auto flex flex-col gap-3">
+      {props.data.projects.map((elem) => (
+        <Entry
+          title={
+            // @ts-ignore: large response
+            elem.full_name
+          }
+          object={
+            // @ts-ignore: large response
+            elem.description
+          }
+          language={
+            // @ts-ignore: large response
+            elem.language
+          }
+          topics={
+            // @ts-ignore: large response
+            elem.topics
+          }
+          private={
+            // @ts-ignore: large response
+            elem.private
+          }
+          url={
+            // @ts-ignore: large response
+            elem.html_url
+          }
+        />
+      ))}
     </div>
   );
 }

@@ -1,4 +1,7 @@
 import { type PageProps } from "$fresh/server.ts";
+import { Header } from "../components/Header.tsx";
+import { Footer } from "../components/Footer.tsx";
+
 export default function App({ Component }: PageProps) {
   return (
     <html>
@@ -8,8 +11,18 @@ export default function App({ Component }: PageProps) {
         <title>ataractic.net</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
-      <body class="bg-sky-200 text-white font-mono text-xs m-3">
-        <Component />
+      <body class="bg-sky-200 text-white font-mono text-xs mx-auto">
+        <div class="bg-[url('/bg.jpg')] h-screen bg-cover bg-center bg-no-repeat">
+          <div class="border-x border-[#393E59] bg-opacity-80 bg-[#222625] mx-auto max-w-screen-md p-3 min-h-screen flex flex-col justify-between">
+            <div>
+            <Header />
+            <Component />
+            </div>
+            <div>
+            <Footer />
+            </div>
+          </div>
+        </div>
       </body>
     </html>
   );

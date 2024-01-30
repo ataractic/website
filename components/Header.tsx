@@ -3,18 +3,18 @@ import { Logo } from "../islands/Logo.tsx";
 export function Header() {
   return (
     <div class="flex flex-col justify-center max-w-screen-md mx-auto mb-3">
-      <div class="flex gap-3 p-1 text-white justify-center border border-sky-900 bg-sky-950">
+      <div class="flex gap-3 p-1 text-white justify-center border border-[#393E59] bg-[#222625]">
         <Logo />
-        <a class="text-blue-400 underline" href="/">
+        <a class="text-[#ECF2BD] underline" href="/">
           home
         </a>
-        <a class="text-blue-400 underline" href="/music">
+        <a class="text-[#ECF2BD] underline" href="/music">
           music
         </a>
-        <a class="text-blue-400 underline" href="/contact">
+        <a class="text-[#ECF2BD] underline" href="/contact">
           contact
         </a>
-        <a class="text-blue-400 underline" href="/projects">
+        <a class="text-[#ECF2BD] underline" href="/projects">
           projects
         </a>
       </div>

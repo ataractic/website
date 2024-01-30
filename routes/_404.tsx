@@ -9,10 +9,10 @@ export default function Error404() {
       </Head>
       <Header />
       <div class="max-w-screen-md mx-auto flex flex-col gap-3">
-        <div class="bg-sky-950 border border-sky-900 p-1">
+        <div class="bg-[#222625] border border-[#393E59] p-1">
         <h1 class="font-bold">404</h1>
         <a
-          class="text-blue-400 underline"
+          class="text-[#ECF2BD] underline"
           href="/"
         >
           better go home

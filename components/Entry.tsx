@@ -5,7 +5,7 @@ interface EntryProps {
 
 export function Entry(props: EntryProps) {
   return (
-    <div class="border border-sky-900 bg-sky-950 p-1">
+    <div class="border border-[#393E59] bg-[#222625] p-1">
       <h1 class="font-bold">{props.title}</h1>
       <h2 class="">{props.object}</h2>
     </div>
