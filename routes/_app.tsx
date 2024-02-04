@@ -8,6 +8,11 @@ export default function App({ Component }: PageProps) {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://ataractic.net/" />
+        <meta property="og:title" content="ataractic.net" />
+        <meta property="og:description" content="hi, my nickname is ataractic, i am a 23 years old french guy. interested in low-level programming, hacking, reverse-engineering and computer science as a whole since childhood, i work on multiple projects related to these fields in favor of a career following this interesting journey." />
+        {/* <meta property="og:image" content="/logo_full.png" /> */}
         <title>ataractic.net</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
