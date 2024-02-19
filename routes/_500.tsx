@@ -49,7 +49,7 @@ export default function Error500() {
           </div>
           <div class="px-4 py-1 divide-y divide-[#99CCFF]">
             <div>
-              <div class="font-bold text-5xl">404</div>
+              <div class="font-bold text-5xl">500</div>
               Oops, there is a problem on our end. Please click the "Report an error" link below to notify the administrator.
             </div>
             <div class="flex gap-2 pt-1 mt-1">
