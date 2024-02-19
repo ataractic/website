@@ -3,7 +3,7 @@ import { Header } from "../components/Header.tsx";
 export default function Music() {
   return (
     <div class="max-w-screen-md mx-auto flex gap-2">
-      <div class="bg-gradient-to-t from-[#99CCFF] to-[#FFFFFF] border border-[#99CCFF] px-4 py-1 rounded-md min-w-fit">
+      <div class="bg-gradient-to-t from-[#99CCFF] to-[#FFFFFF] border border-[#99CCFF] px-2 py-1 rounded-md min-w-fit">
         <ul>
           <li>
             <a class="flex items-center gap-1" href="mailto:ataractic@pm.me">
@@ -30,18 +30,18 @@ export default function Music() {
       </div>
       <div class="bg-white border border-[#99CCFF] rounded-md">
         <div class="bg-gradient-to-t from-[#99CCFF] to-[#FFFFFF] flex rounded-t-md">
-          <a href="/" class="px-4 py-1 rounded-t-md">
+          <a href="/" class="px-2 py-1 rounded-t-md">
             Home
           </a>
-          <div class="bg-gradient-to-b from-[#99CCFF] to-[#FFFFFF] px-4 py-1 border-x border-[#99CCFF] rounded-t-md">
+          <div class="bg-gradient-to-b from-[#99CCFF] to-[#FFFFFF] px-2 py-1 border-x border-[#99CCFF] rounded-t-md">
             Music
           </div>
-          <a href="/projects" class="px-4 py-1 rounded-t-md">
+          <a href="/projects" class="px-2 py-1 rounded-t-md">
             Projects
           </a>
         </div>
         <div class="divide-y divide-[#99CCFF]">
-          <div class="px-4 py-1">
+          <div class="px-2 py-1">
             <h1 class="font-bold">Hyperwav</h1>
             <h2>
               Dreamy electronic lo-fi sounds inspired by retro-futuristic and
@@ -93,7 +93,7 @@ export default function Music() {
               </a>
             </div>
           </div>
-          <div class="px-4 py-1">
+          <div class="px-2 py-1">
             <h1 class="font-bold">Ataractic</h1>
             <h2>
               Dreamy underground electronic lo-fi sounds inspired by night and
@@ -112,7 +112,7 @@ export default function Music() {
               </a>
             </div>
           </div>
-          <div class="px-4 py-1">
+          <div class="px-2 py-1">
             <h1 class="font-bold">ｅｓｃａｐｅ逃げる</h1>
             <h2>
               Luxurious, evasive dreamy and shimmering sounds inspired from 80s

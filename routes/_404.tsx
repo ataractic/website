@@ -7,7 +7,7 @@ export default function Error404() {
         <title>Oops!</title>
       </Head>
       <div class="max-w-screen-md mx-auto flex gap-2">
-        <div class="bg-gradient-to-t from-[#99CCFF] to-[#FFFFFF] border border-[#99CCFF] px-4 py-1 rounded-md min-w-fit">
+        <div class="bg-gradient-to-t from-[#99CCFF] to-[#FFFFFF] border border-[#99CCFF] px-2 py-1 rounded-md min-w-fit">
           <ul>
             <li>
               <a class="flex items-center gap-1" href="mailto:ataractic@pm.me">
@@ -34,20 +34,20 @@ export default function Error404() {
         </div>
         <div class="bg-white border border-[#99CCFF] rounded-md">
           <div class="bg-gradient-to-t from-[#99CCFF] to-[#FFFFFF] flex rounded-t-md">
-            <a href="/" class="px-4 py-1 rounded-t-md">
+            <a href="/" class="px-2 py-1 rounded-t-md">
               Home
             </a>
-            <a href="/music" class="px-4 py-1 rounded-t-md">
+            <a href="/music" class="px-2 py-1 rounded-t-md">
               Music
             </a>
-            <a href="/projects" class="px-4 py-1 rounded-t-md">
+            <a href="/projects" class="px-2 py-1 rounded-t-md">
               Projects
             </a>
-            <div href="/projects" class="italic text-[#FF0000] bg-gradient-to-b from-[#FFFF99] to-[#FFFFFF] border-x border-[#FFFF99] px-4 py-1 rounded-t-md">
+            <div href="/projects" class="italic text-[#FF0000] bg-gradient-to-b from-[#FFFF99] to-[#FFFFFF] border-x border-[#FFFF99] px-2 py-1 rounded-t-md">
               404
             </div>
           </div>
-          <div class="px-4 py-1 divide-y divide-[#99CCFF]">
+          <div class="px-2 py-1 divide-y divide-[#99CCFF]">
             <div>
               <div class="font-bold text-5xl">404</div>
               Congratulations! You discovered a hidden page but... there's
