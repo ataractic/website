@@ -17,11 +17,10 @@ interface EntryProps {
 
 function Entry(props: EntryProps) {
   return (
-    <div class="px-4 py-1">
+    <div class="px-4 py-1 pt-1 mt-1">
       <h1 class="font-bold">
         <a
           href={props.url}
-          class="text-[#FFFFFF] underline"
         >
           {props.title}
         </a>
@@ -91,7 +90,7 @@ export default function projects(props: PageProps<ProjectsPageData>) {
           </li>
         </ul>
       </div>
-      <div class="bg-white border border-[#99CCFF] rounded-md">
+      <div class="bg-white border border-[#99CCFF] rounded-md grow">
         <div class="bg-gradient-to-t from-[#99CCFF] to-[#FFFFFF] flex rounded-t-md">
           <a href="/" class="px-4 py-1 rounded-t-md">
             Home
@@ -103,34 +102,36 @@ export default function projects(props: PageProps<ProjectsPageData>) {
             Projects
           </div>
         </div>
-        {props.data.projects.map((elem) => (
-          <Entry
-            title={
-              // @ts-ignore: large response
-              elem.full_name
-            }
-            object={
-              // @ts-ignore: large response
-              elem.description
-            }
-            language={
-              // @ts-ignore: large response
-              elem.language
-            }
-            topics={
-              // @ts-ignore: large response
-              elem.topics
-            }
-            private={
-              // @ts-ignore: large response
-              elem.private
-            }
-            url={
-              // @ts-ignore: large response
-              elem.html_url
-            }
-          />
-        ))}
+        <div class="divide-y divide-[#99CCFF]">
+          {props.data.projects.map((elem) => (
+            <Entry
+              title={
+                // @ts-ignore: large response
+                elem.full_name
+              }
+              object={
+                // @ts-ignore: large response
+                elem.description
+              }
+              language={
+                // @ts-ignore: large response
+                elem.language
+              }
+              topics={
+                // @ts-ignore: large response
+                elem.topics
+              }
+              private={
+                // @ts-ignore: large response
+                elem.private
+              }
+              url={
+                // @ts-ignore: large response
+                elem.html_url
+              }
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
