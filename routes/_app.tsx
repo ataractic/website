@@ -16,9 +16,9 @@ export default function App({ Component }: PageProps) {
         <title>ataractic.net</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
-      <body class="bg-sky-200 text-white font-mono text-xs mx-auto">
+      <body class="bg-white text-black font-serif mx-auto">
         <div class="bg-[url('/bg.jpg')] h-screen bg-cover bg-center bg-no-repeat">
-          <div class="border-x border-[#393E59] bg-opacity-80 bg-[#222625] mx-auto max-w-screen-md p-3 min-h-screen flex flex-col justify-between">
+          <div class="mx-auto max-w-screen-md min-h-screen flex flex-col justify-between">
             <div>
             <Header />
             <Component />
