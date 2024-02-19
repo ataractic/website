@@ -17,7 +17,7 @@ export default function App({ Component }: PageProps) {
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body class="bg-white text-black font-serif mx-auto">
-        <div class="bg-[url('/bg.jpg')] h-screen bg-cover bg-center bg-no-repeat">
+        <div style="background-image: url('/bg.jpg')" class="bg-top bg-repeat">
           <div class="mx-auto max-w-screen-md min-h-screen flex flex-col justify-between">
             <div>
             <Header />
