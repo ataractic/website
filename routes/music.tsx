@@ -41,7 +41,7 @@ export default function Music() {
           </a>
         </div>
         <div class="divide-y divide-[#99CCFF]">
-          <div class="px-4 py-1 pt-1 mt-1">
+          <div class="px-4 py-1">
             <h1 class="font-bold">Hyperwav</h1>
             <h2>
               Dreamy electronic lo-fi sounds inspired by retro-futuristic and
@@ -93,7 +93,7 @@ export default function Music() {
               </a>
             </div>
           </div>
-          <div class="px-4 py-1 pt-1 mt-1">
+          <div class="px-4 py-1">
             <h1 class="font-bold">Ataractic</h1>
             <h2>
               Dreamy underground electronic lo-fi sounds inspired by night and
@@ -112,7 +112,7 @@ export default function Music() {
               </a>
             </div>
           </div>
-          <div class="px-4 py-1 pt-1 mt-1">
+          <div class="px-4 py-1">
             <h1 class="font-bold">ｅｓｃａｐｅ逃げる</h1>
             <h2>
               Luxurious, evasive dreamy and shimmering sounds inspired from 80s

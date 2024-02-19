@@ -17,7 +17,7 @@ interface EntryProps {
 
 function Entry(props: EntryProps) {
   return (
-    <div class="px-4 py-1 pt-1 mt-1">
+    <div class="px-4 py-1">
       <h1 class="font-bold">
         <a
           href={props.url}
