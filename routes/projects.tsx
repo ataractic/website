@@ -17,61 +17,21 @@ interface EntryProps {
 
 function Entry(props: EntryProps) {
   return (
-    <div class="max-w-screen-md mx-auto flex gap-2">
-      <div class="bg-gradient-to-t from-[#99CCFF] to-[#FFFFFF] border border-[#99CCFF] px-4 py-1 rounded-md min-w-fit">
-        <ul>
-          <li>
-            <a class="flex items-center gap-1" href="mailto:ataractic@pm.me">
-              <img src="/ico/letter_small.png" />E-mail
-            </a>
-          </li>
-          <li>
-            <a
-              class="flex items-center gap-1"
-              href="https://bandcamp.com/ataractic"
-            >
-              <img src="/ico/music_disk_small.png" />Playlist
-            </a>
-          </li>
-          <li>
-            <a
-              class="flex items-center gap-1"
-              href="https://github.com/ataractic"
-            >
-              <img src="/ico/mystify_small.png" />Github
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="bg-white border border-[#99CCFF] rounded-md">
-        <div class="bg-gradient-to-t from-[#99CCFF] to-[#FFFFFF] flex rounded-t-md">
-          <a href="/" class="px-4 py-1 rounded-t-md">
-            Home
-          </a>
-          <div class="bg-gradient-to-b from-[#99CCFF] to-[#FFFFFF] px-4 py-1 border-x border-[#99CCFF] rounded-t-md">
-            Music
-          </div>
-          <a href="/projects" class="px-4 py-1 rounded-t-md">
-            Projects
-          </a>
-        </div>
-        <div class="px-4 py-1">
-          <h1 class="font-bold">
-            <a
-              href={props.url}
-              class="text-[#FFFFFF] underline"
-            >
-              {props.title}
-            </a>
-          </h1>
-          <h2>
-          {props.object ?? "none"}
-          </h2>
-          <div class="flex flex-col">
-            <h2 class="font-bold">Language</h2>
-            <div>{props.language ?? "none"}</div>
-          </div>
-        </div>
+    <div class="px-4 py-1">
+      <h1 class="font-bold">
+        <a
+          href={props.url}
+          class="text-[#FFFFFF] underline"
+        >
+          {props.title}
+        </a>
+      </h1>
+      <h2>
+        {props.object ?? "none"}
+      </h2>
+      <div class="flex flex-col">
+        <h2 class="font-bold">Language</h2>
+        <div>{props.language ?? "none"}</div>
       </div>
     </div>
   );
@@ -105,35 +65,73 @@ export const handler: Handlers<ProjectsPageData, ProjectsPageData> = {
 
 export default function projects(props: PageProps<ProjectsPageData>) {
   return (
-    <div class="max-w-screen-md mx-auto flex flex-col gap-3">
-      {props.data.projects.map((elem) => (
-        <Entry
-          title={
-            // @ts-ignore: large response
-            elem.full_name
-          }
-          object={
-            // @ts-ignore: large response
-            elem.description
-          }
-          language={
-            // @ts-ignore: large response
-            elem.language
-          }
-          topics={
-            // @ts-ignore: large response
-            elem.topics
-          }
-          private={
-            // @ts-ignore: large response
-            elem.private
-          }
-          url={
-            // @ts-ignore: large response
-            elem.html_url
-          }
-        />
-      ))}
+    <div class="max-w-screen-md mx-auto flex gap-2">
+      <div class="bg-gradient-to-t from-[#99CCFF] to-[#FFFFFF] border border-[#99CCFF] px-4 py-1 rounded-md min-w-fit">
+        <ul>
+          <li>
+            <a class="flex items-center gap-1" href="mailto:ataractic@pm.me">
+              <img src="/ico/letter_small.png" />E-mail
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex items-center gap-1"
+              href="https://bandcamp.com/ataractic"
+            >
+              <img src="/ico/music_disk_small.png" />Playlist
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex items-center gap-1"
+              href="https://github.com/ataractic"
+            >
+              <img src="/ico/mystify_small.png" />Github
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="bg-white border border-[#99CCFF] rounded-md">
+        <div class="bg-gradient-to-t from-[#99CCFF] to-[#FFFFFF] flex rounded-t-md">
+          <a href="/" class="px-4 py-1 rounded-t-md">
+            Home
+          </a>
+          <a href="/music" class="px-4 py-1 rounded-t-md">
+            Music
+          </a>
+          <div class="bg-gradient-to-b from-[#99CCFF] to-[#FFFFFF] px-4 py-1 border-x border-[#99CCFF] rounded-t-md">
+            Projects
+          </div>
+        </div>
+        {props.data.projects.map((elem) => (
+          <Entry
+            title={
+              // @ts-ignore: large response
+              elem.full_name
+            }
+            object={
+              // @ts-ignore: large response
+              elem.description
+            }
+            language={
+              // @ts-ignore: large response
+              elem.language
+            }
+            topics={
+              // @ts-ignore: large response
+              elem.topics
+            }
+            private={
+              // @ts-ignore: large response
+              elem.private
+            }
+            url={
+              // @ts-ignore: large response
+              elem.html_url
+            }
+          />
+        ))}
+      </div>
     </div>
   );
 }

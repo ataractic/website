@@ -7,7 +7,6 @@ import * as $_500 from "./routes/_500.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $music from "./routes/music.tsx";
-import * as $projects_copy from "./routes/projects copy.tsx";
 import * as $projects from "./routes/projects.tsx";
 
 import { type Manifest } from "$fresh/server.ts";
@@ -19,7 +18,6 @@ const manifest = {
     "./routes/_app.tsx": $_app,
     "./routes/index.tsx": $index,
     "./routes/music.tsx": $music,
-    "./routes/projects copy.tsx": $projects_copy,
     "./routes/projects.tsx": $projects,
   },
   islands: {},
