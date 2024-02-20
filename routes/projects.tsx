@@ -13,22 +13,40 @@ interface EntryProps {
   topics: string[];
   private: boolean;
   url: string;
+  archived: boolean;
 }
 
 function Entry(props: EntryProps) {
   return (
-    <div class="px-2 py-1">
-      <h1 class="font-bold">
-        <a href={props.url}>
-          {props.title}
-        </a>
-      </h1>
-      <h2>
-        {props.object ?? "none"}
-      </h2>
-      <div class="flex flex-col">
-        <h2 class="font-bold">Language</h2>
-        {props.language ? <div class="bg-gradient-to-t from-[#33CC00] to-[#FFFFFF] border border-[#33CC00] rounded-md px-2 py-1 text-[#339900]">{props.language}</div> : null}
+    <div class="px-2 py-1 flex justify-between gap-2">
+      <div>
+        <h1 class="font-bold">
+          <a href={props.url}>
+            {props.title}
+          </a>
+        </h1>
+        <h2>
+          {props.object ?? "none"}
+        </h2>
+        <div class="flex flex-col items-start">
+          <h2 class="font-bold">Language</h2>
+          {props.language
+            ? (
+              <div class="bg-gradient-to-t from-[#33CC00] to-[#FFFFFF] border border-[#33CC00] rounded-md px-2 py-1 text-[#339900]">
+                {props.language}
+              </div>
+            )
+            : null}
+        </div>
+      </div>
+      <div>
+        {props.archived
+          ? (
+            <div class="bg-gradient-to-t from-[#FFFF99] to-[#FFFFFF] border border-[#FFFF99] rounded-md px-2 py-1 text-[#FFCC99]">
+              public archive
+            </div>
+          )
+          : null}
       </div>
     </div>
   );
@@ -100,6 +118,10 @@ export default function projects(props: PageProps<ProjectsPageData>) {
             url={
               // @ts-ignore: large response
               elem.html_url
+            }
+            archived={
+              // @ts-ignore: large response
+              elem.archived
             }
           />
         ))}
