@@ -32,7 +32,7 @@ function Entry(props: EntryProps) {
           <h2 class="font-bold">Language</h2>
           {props.language
             ? (
-              <div class="bg-gradient-to-t from-[#33CC00] to-[#FFFFFF] border border-[#33CC00] rounded-md px-2 py-1 text-[#339900]">
+              <div class="bg-gradient-to-t from-[#33CC00] to-[#FFFFFF] border border-[#33CC00] rounded-md px-2 py-1 text-[#336600]">
                 {props.language}
               </div>
             )
@@ -42,7 +42,7 @@ function Entry(props: EntryProps) {
       <div>
         {props.archived
           ? (
-            <div class="bg-gradient-to-t from-[#FFCC00] to-[#FFFFFF] border border-[#FFCC00] rounded-md px-2 py-1 text-[#FF9900]">
+            <div class="bg-gradient-to-t from-[#FFCC00] to-[#FFFFFF] border border-[#FFCC00] rounded-md px-2 py-1 text-[#FF6600]">
               public archive
             </div>
           )

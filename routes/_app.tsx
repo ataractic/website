@@ -22,6 +22,7 @@ export default function App({ Component }: PageProps) {
       </head>
       <body class="bg-white text-black font-serif mx-auto">
         <div style="background-image: url('/bg.jpg')" class="bg-top bg-repeat">
+          <div class=" bg-gradient-to-b from-[#FFFFFF88] to-transparent">
           <div class="mx-auto max-w-screen-lg min-h-screen flex flex-col justify-between">
             <div>
               <Header />
@@ -33,6 +34,7 @@ export default function App({ Component }: PageProps) {
             <div>
               <Footer />
             </div>
+          </div>
           </div>
         </div>
       </body>

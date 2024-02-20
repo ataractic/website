@@ -26,8 +26,8 @@ export default function Home() {
         distinct vibe and artistic style.
       </div>
       <div class="flex gap-2 px-2 py-1">
-        <div class="bg-gradient-to-t from-[#33CC00] to-[#FFFFFF] border border-[#33CC00] rounded-md px-2 py-1 text-[#339900]">
-          test
+        <div class="bg-gradient-to-t from-[#33CC00] to-[#FFFFFF] border border-[#33CC00] rounded-md px-2 py-1 text-[#336600]">
+          v2
         </div>
       </div>
     </div>
