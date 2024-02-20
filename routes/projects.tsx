@@ -42,7 +42,7 @@ function Entry(props: EntryProps) {
       <div>
         {props.archived
           ? (
-            <div class="bg-gradient-to-t from-[#FFCC00] dark:from-[#006666] to-[#FFFFFF] dark:to-[#333333] border border-[#FFCC00] dark:border-[#006666] rounded-md px-2 py-1 text-[#FF6600] dark:text-[#00CC66]">
+            <div class="bg-gradient-to-t from-[#FFCC00] dark:from-[#660000] to-[#FFFFFF] dark:to-[#333333] border border-[#FFCC00] dark:border-[#660000] rounded-md px-2 py-1 text-[#FF6600] dark:text-[#FF6600]">
               public archive
             </div>
           )

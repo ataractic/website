@@ -2,7 +2,7 @@ export function Sidebar() {
   return (
     <div class="min-w-fit flex flex-col gap-2">
       <div class="bg-[#FFFFFF] dark:bg-[#333333] border border-[#99CCFF] dark:border-[#000000] rounded-md">
-      <div class="bg-gradient-to-b from-[#99CCFF] dark:from-[#000000] to-[#FFFFFF] dark:to-[#333333] flex rounded-t-md px-2 py-1">
+      <div class="bg-gradient-to-t from-[#99CCFF] dark:from-[#000000] to-[#FFFFFF] dark:to-[#333333] flex rounded-t-md px-2 py-1">
           Contact me
         </div>
         <ul class="px-2 py-1">
@@ -17,7 +17,7 @@ export function Sidebar() {
         </ul>
       </div>
       <div class="bg-[#FFFFFF] dark:bg-[#333333] border border-[#99CCFF] dark:border-[#000000] rounded-md grow">
-        <div class="bg-gradient-to-b from-[#99CCFF] dark:from-[#000000] to-[#FFFFFF] dark:to-[#333333] flex rounded-t-md px-2 py-1">
+        <div class="bg-gradient-to-t from-[#99CCFF] dark:from-[#000000] to-[#FFFFFF] dark:to-[#333333] flex rounded-t-md px-2 py-1">
           My stuff
         </div>
         <ul class="px-2 py-1">
