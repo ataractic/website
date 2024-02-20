@@ -4,6 +4,6 @@
 
 @layer base {
     a {
-      @apply text-[#0000EE] visited:text-[#551A8B] underline;
+      @apply text-[#0000EE] visited:text-[#551A8B] underline dark:text-[#99CCFF] dark:visited:text-[#CC99FF];
     }
   }

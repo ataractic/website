@@ -1,18 +1,18 @@
 export default function Music() {
   return (
-    <div class="bg-white border border-[#99CCFF] rounded-md grow">
-      <div class="bg-gradient-to-t from-[#99CCFF] to-[#FFFFFF] flex rounded-t-md">
+    <div class="bg-[#FFFFFF] dark:bg-[#333333] border border-[#99CCFF] dark:border-[#000000] rounded-md grow">
+      <div class="bg-gradient-to-t from-[#99CCFF] dark:from-[#000000] to-[#FFFFFF] dark:to-[#333333] flex rounded-t-md">
         <a href="/" class="px-2 py-1 rounded-t-md">
           Home
         </a>
-        <div class="bg-gradient-to-b from-[#99CCFF] to-[#FFFFFF] px-2 py-1 border-x border-[#99CCFF] rounded-t-md">
+        <div class="bg-gradient-to-b from-[#99CCFF] dark:from-[#000000] to-[#FFFFFF] dark:to-[#333333] px-2 py-1 border-x border-[#99CCFF] dark:border-[#000000] rounded-t-md">
           Music
         </div>
         <a href="/projects" class="px-2 py-1 rounded-t-md">
           Projects
         </a>
       </div>
-      <div class="divide-y divide-[#99CCFF]">
+      <div class="divide-y divide-[#99CCFF] dark:divide-[#000000]">
         <div class="px-2 py-1">
           <h1 class="font-bold">Hyperwav</h1>
           <h2>

@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <div class="bg-white border border-[#99CCFF] rounded-md grow">
-      <div class="bg-gradient-to-t from-[#99CCFF] to-[#FFFFFF] flex rounded-t-md">
-        <div class="bg-gradient-to-b from-[#99CCFF] to-[#FFFFFF] px-2 py-1 border-r border-[#99CCFF] rounded-t-md">
+    <div class="bg-[#FFFFFF] dark:bg-[#333333] border border-[#99CCFF] dark:border-[#000000] rounded-md grow">
+      <div class="bg-gradient-to-t from-[#99CCFF] dark:from-[#000000] to-[#FFFFFF] dark:to-[#333333] flex rounded-t-md">
+        <div class="bg-gradient-to-b from-[#99CCFF] dark:from-[#000000] to-[#FFFFFF] dark:to-[#333333] px-2 py-1 border-r border-[#99CCFF] dark:border-[#000000] rounded-t-md">
           Home
         </div>
         <a href="/music" class="px-2 py-1 rounded-t-md">
@@ -26,7 +26,7 @@ export default function Home() {
         distinct vibe and artistic style.
       </div>
       <div class="flex gap-2 px-2 py-1">
-        <div class="bg-gradient-to-t from-[#33CC00] to-[#FFFFFF] border border-[#33CC00] rounded-md px-2 py-1 text-[#336600]">
+        <div class="bg-gradient-to-t from-[#33CC00] dark:from-[#336600] to-[#FFFFFF] dark:to-[#333333] border border-[#33CC00] dark:border-[#336600] rounded-md px-2 py-1 text-[#336600] dark:text-[#33CC00]">
           v2.1
         </div>
       </div>
