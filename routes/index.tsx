@@ -27,7 +27,7 @@ export default function Home() {
       </div>
       <div class="flex gap-2 px-2 py-1">
         <div class="bg-gradient-to-t from-[#33CC00] to-[#FFFFFF] border border-[#33CC00] rounded-md px-2 py-1 text-[#336600]">
-          v2
+          v2.1
         </div>
       </div>
     </div>
