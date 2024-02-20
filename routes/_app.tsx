@@ -16,7 +16,7 @@ export default function App({ Component }: PageProps) {
           property="og:description"
           content="hi, my nickname is ataractic, i am a 23 years old french guy. interested in low-level programming, hacking, reverse-engineering and computer science as a whole since childhood, i work on multiple projects related to these fields in favor of a career following this interesting journey."
         />
-        <meta property="og:image" content="/night_on_computer.png" />
+        <meta property="og:image" content="/ico/night_on_computer.png" />
         <title>ataractic.net</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
