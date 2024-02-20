@@ -19,9 +19,7 @@ function Entry(props: EntryProps) {
   return (
     <div class="px-2 py-1">
       <h1 class="font-bold">
-        <a
-          href={props.url}
-        >
+        <a href={props.url}>
           {props.title}
         </a>
       </h1>
@@ -30,7 +28,7 @@ function Entry(props: EntryProps) {
       </h2>
       <div class="flex flex-col">
         <h2 class="font-bold">Language</h2>
-        <div>{props.language ?? "none"}</div>
+        {props.language ? <div class="bg-gradient-to-t from-[#33CC00] to-[#FFFFFF] border border-[#33CC00] rounded-md px-2 py-1 text-[#339900]">{props.language}</div> : null}
       </div>
     </div>
   );
