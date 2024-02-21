@@ -88,7 +88,7 @@ export default function projects(props: PageProps<ProjectsPageData>) {
         <a href="/music" class="px-2 py-1 rounded-t-md">
           Music
         </a>
-        <div class="bg-gradient-to-b from-[#99CCFF] dark:from-[#000000] to-[#000000] dark: px-2 py-1 border-x border-[#99CCFF] dark:border-[#000000] rounded-t-md">
+        <div class="bg-gradient-to-b from-[#99CCFF] dark:from-[#000000] to-[#FFFFFF] dark:to-[#333333] px-2 py-1 border-x border-[#99CCFF] dark:border-[#000000] rounded-t-md">
           Projects
         </div>
       </div>
