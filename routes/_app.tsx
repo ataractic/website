@@ -23,18 +23,18 @@ export default function App({ Component }: PageProps) {
       <body class="bg-[#FFFFFF] dark:bg-[#333333] text-[#000000] dark:text-[#FFFFFF] font-serif mx-auto">
         <div style="background-image: url('/bg.jpg')" class="bg-top bg-repeat">
           <div class=" bg-gradient-to-b from-[#FFFFFF88] dark:from-[#00000088] to-transparent">
-          <div class="mx-auto max-w-screen-lg min-h-screen flex flex-col justify-between">
-            <div>
-              <Header />
-              <div class="flex gap-2">
-                <Sidebar />
-                <Component />
+            <div class="mx-auto max-w-screen-lg min-h-screen flex flex-col justify-between">
+              <div>
+                <Header />
+                <div class="flex gap-2">
+                  <Sidebar />
+                  <Component />
+                </div>
+              </div>
+              <div>
+                <Footer />
               </div>
             </div>
-            <div>
-              <Footer />
-            </div>
-          </div>
           </div>
         </div>
       </body>

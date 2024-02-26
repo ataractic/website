@@ -14,6 +14,14 @@ export function Sidebar() {
               <img src="/ico/letter_small.png" />E-mail
             </a>
           </li>
+          <li>
+            <a
+              class="flex items-center gap-1"
+              href="https://discordapp.com/users/216909665257259008"
+            >
+              <img src="/ico/chat_small.png" />Discord
+            </a>
+          </li>
         </ul>
       </div>
       <div class="bg-[#FFFFFF] dark:bg-[#333333] border border-[#99CCFF] dark:border-[#000000] rounded-md grow">
