@@ -42,26 +42,25 @@ function Entry({ repo }: { repo: Repo }) {
 }
 
 export const handler: Handlers<PageData, PageData> = {
-  GET(_req, ctx) {
+  async GET(_req, ctx) {
+    const GITHUB_TOKEN = Deno.env.get("GITHUB_TOKEN");
     const url_list: string[] = [
       "https://api.github.com/users/ataractic/repos",
       "https://api.github.com/orgs/n1rip/repos",
     ];
-    const GITHUB_TOKEN = Deno.env.get("GITHUB_TOKEN");
-    const repos: Repo[] = [];
+    const headers = {
+      "Authorization": `Bearer ${GITHUB_TOKEN}`,
+      "X-GitHub-Api-Version": "2022-11-28",
+    };
+    let repos: Repo[] = [];
 
-    url_list.forEach(async (url) => {
-      const res: Response = await fetch(url, {
-        headers: {
-          "Authorization": `Bearer ${GITHUB_TOKEN}`,
-          "X-GitHub-Api-Version": "2022-11-28",
-        },
-      });
+    await Promise.all(url_list.map(async (url) => {
+      const res: Response = await fetch(url, { headers });
 
       if (res.ok) {
-        repos.push(await JSON.parse(await res.json()));
+        repos = repos.concat(await JSON.parse(await res.text()));
       }
-    });
+    }));
 
     return ctx.render({ repos });
   },
